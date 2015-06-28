@@ -27,9 +27,18 @@ See [`src/hubot-memegen.coffee`](src/hubot-memegen.coffee) for full documentatio
 3. Run your bot and see below for available config / commands
 
 
+## Commands
+
+Command | Description
+--- | ---
+hubot list | Returns available meme templates from Memegen.link and their respective URLs (keys)
+hubot <template> --top <text> --bottom <text> | Creates a <template> meme using <text> and returns links to it
+
+
 ## Sample Interaction
 
 ```
-user1>> 
-hubot>> 
+user1>> hubot meme chosen --top Hello World! --bottom Ayy Lmao!
+hubot>> Visible: http://memegen.link/chosen/hello-world%21/ayy-lmao%21.jpg
+hubot>> Masked: http://memegen.link/_Y2hvc2VuCWhlbGxvLXdvcmxkIS9heXktbG1hbyEJ.jpg
 ```
