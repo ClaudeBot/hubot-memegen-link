@@ -32,7 +32,7 @@ See [`src/hubot-memegen.coffee`](src/hubot-memegen.coffee) for full documentatio
 Command | Description
 --- | ---
 hubot list | Returns available meme templates from Memegen.link and their respective URLs (keys)
-hubot <template> --top <text> --bottom <text> | Creates a <template> meme using <text> and returns links to it
+hubot `template` --top `text` --bottom `text` | Creates a `template` meme using `text` and returns links to it
 
 
 ## Sample Interaction
