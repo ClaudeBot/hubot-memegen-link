@@ -1,9 +1,9 @@
 # hubot-memegen-link
 
-[![Build Status](https://travis-ci.org/ClaudeBot/hubot-memegen.svg)](https://travis-ci.org/ClaudeBot/hubot-memegen)
-[![devDependency Status](https://david-dm.org/ClaudeBot/hubot-memegen/dev-status.svg)](https://david-dm.org/ClaudeBot/hubot-memegen#info=devDependencies)
+[![Build Status](https://travis-ci.org/ClaudeBot/hubot-memegen-link.svg)](https://travis-ci.org/ClaudeBot/hubot-memegen-link)
+[![devDependency Status](https://david-dm.org/ClaudeBot/hubot-memegen-link/dev-status.svg)](https://david-dm.org/ClaudeBot/hubot-memegen-link#info=devDependencies)
 
-A Hubot script for creating memes from templates using memegen.link.
+A Hubot script for creating memes from templates using [memegen.link](http://memegen.link/).
 
 See [`src/hubot-memegen.coffee`](src/hubot-memegen.coffee) for full documentation.
 
