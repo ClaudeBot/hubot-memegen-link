@@ -1,5 +1,5 @@
 {
-  "name": "hubot-memegen",
+  "name": "hubot-memegen-link",
   "description": "A Hubot script for creating memes from templates using memegen.link.",
   "version": "0.0.1",
   "author": "Ian Lai <ian@fyianlai.com>",
@@ -7,10 +7,10 @@
   "keywords": "hubot, hubot-scripts, meme, funny, generator, lols",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-memegen.git"
+    "url": "git://github.com/hubot-scripts/hubot-memegen-link.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-memegen/issues"
+    "url": "https://github.com/hubot-scripts/hubot-memegen-link/issues"
   },
   "dependencies": {},
   "peerDependencies": {

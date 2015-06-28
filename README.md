@@ -1,4 +1,4 @@
-# hubot-memegen
+# hubot-memegen-link
 
 [![Build Status](https://travis-ci.org/ClaudeBot/hubot-memegen.svg)](https://travis-ci.org/ClaudeBot/hubot-memegen)
 [![devDependency Status](https://david-dm.org/ClaudeBot/hubot-memegen/dev-status.svg)](https://david-dm.org/ClaudeBot/hubot-memegen#info=devDependencies)
@@ -10,17 +10,17 @@ See [`src/hubot-memegen.coffee`](src/hubot-memegen.coffee) for full documentatio
 
 ## Installation via NPM
 
-1. Install the __hubot-memegen__ module as a Hubot dependency by running:
+1. Install the __hubot-memegen-link__ module as a Hubot dependency by running:
 
     ```
-    npm install --save hubot-memegen
+    npm install --save hubot-memegen-link
     ```
 
-2. Enable the module by adding the __hubot-memegen__ entry to your `external-scripts.json` file:
+2. Enable the module by adding the __hubot-memegen-link__ entry to your `external-scripts.json` file:
 
     ```json
     [
-        "hubot-memegen"
+        "hubot-memegen-link"
     ]
     ```
 
