@@ -32,13 +32,20 @@ See [`src/hubot-memegen.coffee`](src/hubot-memegen.coffee) for full documentatio
 Command | Description
 --- | ---
 hubot list | Returns available meme templates from Memegen.link and their respective URLs (keys)
-hubot `template` --top `text` --bottom `text` | Creates a `template` meme using `text` and returns links to it
+hubot meme create | Starts meme creation process
+hubot meme cancel | Cancels the meme creation process
 
 
 ## Sample Interaction
 
 ```
-user1>> hubot meme chosen --top Hello World! --bottom Ayy Lmao!
+user1>> hubot meme create
+hubot>> user1: (1/3) Creating a meme. What template should I use (reply with the key)?
+user1>> chosen
+hubot>> user1: (2/3) What should the top text be?
+user1>> Ayy
+hubot>> user1: (3/3) What should the bottom text be?
+user1>> lmao
 hubot>> Visible: http://memegen.link/chosen/hello-world%21/ayy-lmao%21.jpg
 hubot>> Masked: http://memegen.link/_Y2hvc2VuCWhlbGxvLXdvcmxkIS9heXktbG1hbyEJ.jpg
 ```
