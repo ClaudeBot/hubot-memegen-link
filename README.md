@@ -29,11 +29,10 @@ See [`src/hubot-memegen.coffee`](src/hubot-memegen.coffee) for full documentatio
 
 ## Commands
 
-Command | Description
---- | ---
-hubot list | Returns available meme templates from Memegen.link and their respective URLs (keys)
-hubot meme create | Starts meme creation process
-hubot meme cancel | Cancels the meme creation process
+Command | Listener ID | Description
+--- | --- | ---
+hubot meme create | `memegen.new` | Starts meme creation process
+hubot meme cancel | `memegen.cancel` | Cancels the meme creation process
 
 
 ## Sample Interaction

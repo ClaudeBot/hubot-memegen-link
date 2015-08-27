@@ -5,7 +5,6 @@
 #   None
 #
 # Commands:
-#   hubot list - Returns available meme templates from Memegen.link and their respective URLs (keys)
 #   hubot meme create - Starts meme creation process
 #   hubot meme cancel - Cancels the meme creation process
 #
@@ -50,7 +49,7 @@ module.exports = (robot) ->
     _spaceToHyphen = (str) ->
         str.replace(/\s+/g, '-').toLowerCase()
 
-    robot.respond /meme create/i, (res) ->
+    robot.respond /meme create/i, id: "memegen.new", (res) ->
         return if _getPending(res.message.user)
         createMsg = "(1/3) Creating a meme. What template should I use (reply with the key)?"
 
@@ -72,7 +71,7 @@ module.exports = (robot) ->
         _pending.push [res.message.user, false, false, false]
         res.message.done = true
 
-    robot.respond /meme cancel/i, (res) ->
+    robot.respond /meme cancel/i, id: "memegen.cancel", (res) ->
         if [index, userMeme] = _getPending(res.message.user)
             _pending.splice index, 1
             res.reply "Your meme operation has been cancelled."
