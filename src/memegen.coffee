@@ -69,7 +69,7 @@ module.exports = (robot) ->
                 res.reply createMsg
 
         _pending.push [res.message.user, false, false, false]
-        res.message.done = true
+        res.finish()
 
     robot.respond /meme cancel/i, id: "memegen.cancel", (res) ->
         if [index, userMeme] = _getPending(res.message.user)
@@ -77,9 +77,9 @@ module.exports = (robot) ->
             res.reply "Your meme operation has been cancelled."
         else
             res.reply "You have no meme pending creation."
-        res.message.done = true
+        res.finish()
 
-    robot.hear /(.+)/i, (res) ->
+    robot.hear /(.+)/i, id: "memegen.process", (res) ->
         return if _pending.length is 0
         input = res.match[1]
 
